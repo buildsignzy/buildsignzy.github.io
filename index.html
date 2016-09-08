@@ -17,19 +17,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-
-  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="js/app.js"></script>
-
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/skeleton.css">
-  <!-- Add the slick-theme.css if you want default styling -->
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,31 +33,32 @@
 
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!-- particles.js container -->
-<div id="particles-js"></div>
 
 <section class="home">
   <div class="container">
     <div class="row">
-     <div class="one-half column" id="over" style="position:absolute; width:100%; height:100%;margin-top:200px;">
-      <img src="images/logo/logo-white.png" alt="logo" style="width:240px;height:60px;">
+     <div class="one-half column" id="over" style="position:absolute; width:100%; height:100%;margin-top:300px;">
+      <img src="images/logo/logo-white.png" alt="logo" style="width:300px;height:100px;">
       <h6 style="color:white;text-align:center;margin-top:12px;">Simple.Secure.legal</h6>
      </div>
     </div>
   </div>
 </section>
 
-<section class="content">
- <div class="row">
-    <div class="twelve columns"><h5><b>Future regulatory processes will use technology such as Artificial Intelligence and Blockchain</h5></div>
-    <ul>
-      <li>which will help make regulatory processes simple, secure and legal</li>
-      <li>to be consumer friendly yet secure and compliant</li>
-    </ul>
-    </div>
+<!-- particles.js container -->
+<section id="fbsection1">
+		<div id="particles-js"></div>
 </section>
 
-<section class="product">
+<div class="container-goal">
+    <span class="text">Future regulatory processes will use technology such as Artificial Intelligence and Blockchain</span>
+    <div class="aggettivi">
+        <div class="text-animated-one"> which will help make regulatory processes simple, secure and legal.</div>
+        <div class="text-animated-two"> to be consumer friendly yet secure and compliant.</div>
+    </div>
+</div>
+
+<section class="features">
   <div class="four columns">
   <span>
     <img src="images/logo/2_user-experiance_blue_square.png" alt="UX" style="width:60px;height:60px;" align="middle">
@@ -85,13 +79,24 @@
   </div>
 </section>
 
-<section class="team">
-  <div class="">
+<section class="product">
+  <div class="four columns">
+  <span>
+    <img src="images/logo/KYC_blue_square.png" alt="kyc" style="width:60px;height:60px;" align="middle">
+  </span>
+    <h6>Bank grade digital KYC in real time</h6>
   </div>
-</section>
-
-<section class="lights">
-  <div class="">
+   <div class="four columns">
+  <span>
+    <img src="images/logo/8_Biometrics_blue_square.png" alt="biometrics" style="width:60px;height:60px;" align="middle">
+  </span>
+    <h6>Secured digital contracts enabled by Aadhar and biometrics</h6>
+  </div>
+   <div class="four columns">
+  <span>
+    <img src="images/logo/7_ARI_blue_square.png" alt="ari" style="width:60px;height:60px;" align="middle">
+  </span>
+    <h6>Algorithmic Risk Intelligence (ARI) for satisfactory background due diligence</h6>
   </div>
 </section>
 
@@ -105,6 +110,17 @@
   </div>
 </section>
 
+<section class="team">
+  <div class="">
+  </div>
+</section>
+
+<section class="lights">
+  <div class="">
+  </div>
+</section>
+
+
 <section class="featured-in">
   <div class="">
   </div>
@@ -114,6 +130,46 @@
   <div class="">
   </div>
 </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/main.min.js"></script>
+<script>
+particlesJS('particles-js', {
+particles: {
+    color: '#abab81',
+    shape: 'circle',
+    opacity: 1,
+    size: 2.5,
+    size_random: true,
+    nb: 100,
+    line_linked: {
+        enable_auto: true,
+        distance: 340,
+        color: '#4f5b60',
+        opacity: 0.5,
+        width: 1,
+        condensed_mode: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 600
+        }
+    },
+    anim: {
+        enable: true,
+        speed: 1.5
+    }
+},
+interactivity: {
+    enable: true,
+    mouse: {
+        distance: 100
+    },
+    detect_on: 'canvas',
+    mode: 'grab'
+},
+retina_detect: true
+});
+</script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
